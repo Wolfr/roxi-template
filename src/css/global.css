@@ -449,3 +449,8 @@ body {
     max-width: 90%;
     margin: 0 auto;
 }
+
+* {
+  color: red;
+  border: 1px solid red !important;
+}

@@ -1,4 +1,5 @@
 import { mdsvex } from 'mdsvex'
+import postcss from 'rollup-plugin-postcss'
 
 export default {
   svelte: config => ({
@@ -6,6 +7,9 @@ export default {
     preprocess: mdsvex({ extension: '.md' }),
     extensions: ['.svelte', '.md'],
   }),
-  rollup: config => ({ ...config }),
+  rollup: config => ({
+    ...config,
+    plugins: [ postcss(), ...config.plugins]
+  }),
   routify: config => ({ ...config })
 }

@@ -1,4 +1,5 @@
 <script>
+  import '../css/global.css'
   import { layout } from "roxi/routify";
 </script>
 

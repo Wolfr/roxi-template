@@ -448,9 +448,6 @@ blockquote footer {
 body {
     max-width: 90%;
     margin: 0 auto;
+    background: red;
 }
 
-* {
-  color: red;
-  border: 1px solid red !important;
-}
